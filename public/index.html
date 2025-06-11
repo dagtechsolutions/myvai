@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Prime News</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Prime News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Prime News</h1>
-    </header>
-    <main>
-        <section id="news-list"></section>
-        <section id="news-form-section">
-            <h2>Submit News</h2>
-            <form id="news-form">
-                <input type="text" id="title" placeholder="Title" required>
-                <textarea id="content" placeholder="Content" required></textarea>
-                <input type="text" id="imageUrl" placeholder="Image URL">
-                <input type="text" id="author" placeholder="Author">
-                <button type="submit">Post</button>
-            </form>
-        </section>
-    </main>
-    <script src="app.js"></script>
+  <div class="sidebar">
+    <h1>Prime<br>News</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="filterCategory('Business')">Business</a></li>
+        <li><a href="#" onclick="filterCategory('Politics')">Politics</a></li>
+        <li><a href="#" onclick="filterCategory('Entertainment')">Entertainment</a></li>
+        <li><a href="#" onclick="filterCategory('Opinion')">Opinion</a></li>
+        <li><a href="#" onclick="filterCategory('Sports')">Sports</a></li>
+        <li><a href="#" onclick="filterCategory('International')">International</a></li>
+        <li><a href="#" onclick="filterCategory('News')">News</a></li>
+        <li><a href="#" onclick="filterCategory('Maggie\'s Blog')">Maggie's Blog</a></li>
+        <li><a href="#" onclick="filterCategory('ICT Monitor')"><em>ICT Monitor</em></a></li>
+        <li><a href="#" class="highlight" onclick="filterCategory('News and Events')">News and Events</a></li>
+        <li><a href="post.html">Admin</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section id="news-list"></section>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>
