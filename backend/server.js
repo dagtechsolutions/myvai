@@ -20,7 +20,7 @@ app.use('/api/news', newsRoutes);
 // Fallback for SPA: serve index.html for any non-API route
 app.get('*', (req, res) => {
   if (!req.path.startsWith('/api/')) {
-    res.sendFile(path.join(__dirname, '../frontend/index.html'));
+    res.sendFile(path.join(__dirname, '../public/index.html'));
   }
 });
 
